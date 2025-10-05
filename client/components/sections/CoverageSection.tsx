@@ -44,7 +44,7 @@ export function CoverageSection() {
         </div>
 
         <div className="relative">
-          <div className="aspect-square w-full rounded-[2.5rem] border border-primary/30 bg-white/80 p-6 shadow-[0_32px_92px_-40px_rgba(14,165,233,0.55)]">
+          <div className="aspect-square w-full rounded-[2.5rem] border border-primary/30 bg-white/80 p-6 shadow-[0_32px_92px_-40px_rgba(14,165,233,0.55)] dark:bg-slate-900/70 dark:shadow-[0_32px_92px_-40px_rgba(14,165,233,0.35)]">
             <div className="h-full w-full rounded-[1.8rem] bg-[radial-gradient(circle_at_center,_rgba(14,165,233,0.2)_0%,_transparent_60%)]">
               <div className="h-full w-full rounded-[1.8rem] border border-dashed border-primary/40 p-4">
                 <div className="flex h-full flex-col justify-between rounded-[1.4rem] bg-slate-900/95 p-6 text-white">
