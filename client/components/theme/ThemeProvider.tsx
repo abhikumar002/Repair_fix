@@ -52,6 +52,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
   useEffect(() => {
     applyDocumentTheme(theme);
+    if (typeof window === "undefined") {
+      return;
+    }
     if (manual) {
       window.localStorage.setItem(storageKey, theme);
     } else {
@@ -60,6 +63,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   }, [manual, theme]);
 
   useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const listener = (event: MediaQueryListEvent) => {
       if (!manual) {
