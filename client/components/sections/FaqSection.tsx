@@ -35,7 +35,7 @@ export function FaqSection() {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="group overflow-hidden rounded-3xl border border-border/70 bg-white/80 p-6 transition hover:border-primary/50"
+            className="group overflow-hidden rounded-3xl border border-border/70 bg-white/80 p-6 transition hover:border-primary/50 dark:bg-slate-900/70"
           >
             <summary className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-semibold text-foreground">
               {faq.question}
