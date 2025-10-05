@@ -4,7 +4,7 @@ export function CoverageSection() {
   return (
     <section
       id="coverage"
-      className="relative overflow-hidden rounded-[2.5rem] border border-primary/30 bg-gradient-to-br from-primary/20 via-primary/5 to-white px-6 py-12 sm:px-10 lg:px-16"
+      className="relative overflow-hidden rounded-[2.5rem] border border-primary/30 bg-gradient-to-br from-primary/20 via-primary/5 to-white px-6 py-12 sm:px-10 lg:px-16 dark:from-slate-900/80 dark:via-slate-900/70 dark:to-primary/10"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.2)_0%,_transparent_60%)]" />
       <div className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1fr)] lg:items-center">
