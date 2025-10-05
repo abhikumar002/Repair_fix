@@ -25,6 +25,14 @@ function getPreferredTheme(): Theme {
   return prefersDark ? "dark" : "light";
 }
 
+function hasStoredPreference(): boolean {
+  if (typeof window === "undefined") {
+    return false;
+  }
+  const stored = window.localStorage.getItem(storageKey);
+  return stored === "light" || stored === "dark";
+}
+
 function applyDocumentTheme(theme: Theme) {
   if (typeof document === "undefined") {
     return;
@@ -40,26 +48,39 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<Theme>(() => getPreferredTheme());
+  const [manual, setManual] = useState<boolean>(() => hasStoredPreference());
 
   useEffect(() => {
     applyDocumentTheme(theme);
-    window.localStorage.setItem(storageKey, theme);
-  }, [theme]);
+    if (manual) {
+      window.localStorage.setItem(storageKey, theme);
+    } else {
+      window.localStorage.removeItem(storageKey);
+    }
+  }, [manual, theme]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const listener = (event: MediaQueryListEvent) => {
-      setThemeState(event.matches ? "dark" : "light");
+      if (!manual) {
+        setThemeState(event.matches ? "dark" : "light");
+      }
     };
     mediaQuery.addEventListener("change", listener);
     return () => mediaQuery.removeEventListener("change", listener);
-  }, []);
+  }, [manual]);
 
   const value = useMemo(
     () => ({
       theme,
-      toggleTheme: () => setThemeState((prev) => (prev === "dark" ? "light" : "dark")),
-      setTheme: (nextTheme: Theme) => setThemeState(nextTheme),
+      toggleTheme: () => {
+        setManual(true);
+        setThemeState((prev) => (prev === "dark" ? "light" : "dark"));
+      },
+      setTheme: (nextTheme: Theme) => {
+        setManual(true);
+        setThemeState(nextTheme);
+      },
     }),
     [theme],
   );
