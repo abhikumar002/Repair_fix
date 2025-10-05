@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { PhoneCall, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 const navigation = [
   { name: "Services", href: "#services" },
@@ -47,6 +48,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <a
             href="tel:+18005551234"
             className="hidden items-center gap-2 rounded-full border border-border/80 px-4 py-2 text-sm font-medium text-foreground transition hover:border-primary/60 hover:text-primary lg:flex"
@@ -90,13 +92,16 @@ export function SiteHeader() {
               {item.name}
             </a>
           ))}
-          <Link
-            to="/book"
-            onClick={closeMenu}
-            className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:shadow-xl hover:shadow-primary/40"
-          >
-            Book a repair
-          </Link>
+          <div className="flex items-center justify-between gap-3">
+            <ThemeToggle />
+            <Link
+              to="/book"
+              onClick={closeMenu}
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:shadow-xl hover:shadow-primary/40"
+            >
+              Book a repair
+            </Link>
+          </div>
         </nav>
       </div>
     </header>
