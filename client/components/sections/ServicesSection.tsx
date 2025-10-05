@@ -55,7 +55,7 @@ export function ServicesSection() {
           return (
             <article
               key={service.title}
-              className="group relative overflow-hidden rounded-3xl border border-border/80 bg-white/80 p-7 shadow-[0_24px_60px_-45px_rgba(14,165,233,0.55)] transition hover:-translate-y-1 hover:shadow-[0_32px_80px_-40px_rgba(14,165,233,0.6)]"
+              className="group relative overflow-hidden rounded-3xl border border-border/80 bg-white/90 p-7 shadow-[0_24px_60px_-45px_rgba(14,165,233,0.55)] transition hover:-translate-y-1 hover:shadow-[0_32px_80px_-40px_rgba(14,165,233,0.6)] dark:bg-slate-900/70 dark:shadow-[0_24px_60px_-45px_rgba(14,165,233,0.25)]"
             >
               <div className="flex items-center justify-between">
                 <span className="rounded-2xl bg-primary/10 p-3 text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
