@@ -46,7 +46,7 @@ export function PricingSection() {
         {pricingTiers.map((tier) => (
           <article
             key={tier.name}
-            className={`relative flex flex-col rounded-[2rem] border border-border/80 p-8 shadow-[0_32px_80px_-45px_rgba(14,165,233,0.6)] transition hover:-translate-y-1 hover:shadow-[0_40px_90px_-40px_rgba(14,165,233,0.55)] ${tier.highlighted ? "bg-gradient-to-br from-primary to-primary/70 text-primary-foreground" : "bg-white/90"}`}
+            className={`relative flex flex-col rounded-[2rem] border border-border/80 p-8 shadow-[0_32px_80px_-45px_rgba(14,165,233,0.6)] transition hover:-translate-y-1 hover:shadow-[0_40px_90px_-40px_rgba(14,165,233,0.55)] ${tier.highlighted ? "bg-gradient-to-br from-primary to-primary/70 text-primary-foreground" : "bg-white/90 dark:bg-slate-900/70"}`}
           >
             {tier.highlighted && (
               <span className="absolute left-8 top-6 inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-white/90">
