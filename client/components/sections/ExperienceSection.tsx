@@ -44,7 +44,7 @@ export function ExperienceSection() {
           return (
             <article
               key={step.title}
-              className="group relative overflow-hidden rounded-3xl border border-border/70 bg-gradient-to-br from-white to-primary/5 p-8"
+              className="group relative overflow-hidden rounded-3xl border border-border/70 bg-gradient-to-br from-white to-primary/5 p-8 dark:from-slate-900/70 dark:to-primary/10"
             >
               <div className="flex items-center justify-between">
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
