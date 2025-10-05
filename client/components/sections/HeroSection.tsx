@@ -61,7 +61,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative flex h-full w-full items-center justify-center">
-          <div className="absolute -inset-10 -z-10 animate-pulse rounded-full bg-[radial-gradient(circle,_rgba(14,165,233,0.14)_0%,_transparent_70%)] blur-2xl" />
+          <div className="absolute -inset-10 -z-10 animate-pulse rounded-full bg-[radial-gradient(circle,_rgba(14,165,233,0.14)_0%,_transparent_70%)] blur-2xl dark:bg-[radial-gradient(circle,_rgba(14,165,233,0.2)_0%,_transparent_70%)]" />
           <div className="relative aspect-[3/5] w-full max-w-xs overflow-hidden rounded-[2.2rem] border border-primary/20 bg-slate-900/95 p-5 text-white shadow-[0_32px_80px_-36px_rgba(14,165,233,0.8)]">
             <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-slate-400">
               <span>SwiftFix Pro</span>
