@@ -18,7 +18,9 @@ export function HeroSection() {
               Repairs at your doorstep in under 30 minutes.
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-              SwiftFix dispatches certified technicians to your home or office, delivering OEM-grade parts and lifetime-warrantied mobile repairs without the wait.
+              SwiftFix dispatches certified technicians to your home or office,
+              delivering OEM-grade parts and lifetime-warrantied mobile repairs
+              without the wait.
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
@@ -41,21 +43,27 @@ export function HeroSection() {
                 <Timer className="h-4 w-4 text-primary" />
                 Average turnaround
               </dt>
-              <dd className="mt-1 text-2xl font-semibold text-foreground">27 mins</dd>
+              <dd className="mt-1 text-2xl font-semibold text-foreground">
+                27 mins
+              </dd>
             </div>
             <div>
               <dt className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                 <ShieldCheck className="h-4 w-4 text-primary" />
                 Lifetime guarantee
               </dt>
-              <dd className="mt-1 text-2xl font-semibold text-foreground">Included</dd>
+              <dd className="mt-1 text-2xl font-semibold text-foreground">
+                Included
+              </dd>
             </div>
             <div>
               <dt className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
                 <Star className="h-4 w-4 text-primary" />
                 Customer rating
               </dt>
-              <dd className="mt-1 text-2xl font-semibold text-foreground">4.94 / 5</dd>
+              <dd className="mt-1 text-2xl font-semibold text-foreground">
+                4.94 / 5
+              </dd>
             </div>
           </dl>
         </div>
@@ -69,8 +77,12 @@ export function HeroSection() {
             </div>
             <div className="mt-16 space-y-8">
               <div>
-                <p className="text-xs uppercase tracking-[0.4em] text-primary/80">Technician en route</p>
-                <p className="mt-2 font-heading text-3xl font-bold">Kevin Miles</p>
+                <p className="text-xs uppercase tracking-[0.4em] text-primary/80">
+                  Technician en route
+                </p>
+                <p className="mt-2 font-heading text-3xl font-bold">
+                  Kevin Miles
+                </p>
                 <p className="text-sm text-slate-400">15 minutes away</p>
               </div>
               <div className="space-y-4 rounded-3xl bg-white/5 p-4">

@@ -4,7 +4,8 @@ const pricingTiers = [
   {
     name: "On-Demand",
     price: "$89",
-    description: "Perfect for single device emergencies. Parts, labor, and sanitization are covered upfront.",
+    description:
+      "Perfect for single device emergencies. Parts, labor, and sanitization are covered upfront.",
     features: [
       "Certified technician at your location",
       "Lifetime workmanship guarantee",
@@ -16,7 +17,8 @@ const pricingTiers = [
   {
     name: "Protection+ Membership",
     price: "$19/mo",
-    description: "Ideal for families and teams. Enjoy unlimited service calls, parts protection, and proactive care.",
+    description:
+      "Ideal for families and teams. Enjoy unlimited service calls, parts protection, and proactive care.",
     features: [
       "Unlimited same-day visits",
       "Premium OEM-grade components",
@@ -38,7 +40,9 @@ export function PricingSection() {
           No surprises, just precision repairs
         </h2>
         <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Choose a one-time visit or unlock unlimited coverage with Protection+. Both plans include OEM-grade parts, sanitization, and lifetime craftsmanship guarantees.
+          Choose a one-time visit or unlock unlimited coverage with Protection+.
+          Both plans include OEM-grade parts, sanitization, and lifetime
+          craftsmanship guarantees.
         </p>
       </div>
 
@@ -54,21 +58,37 @@ export function PricingSection() {
               </span>
             )}
             <div className="mt-6 space-y-3">
-              <h3 className={`font-heading text-3xl font-semibold ${tier.highlighted ? "text-white" : "text-foreground"}`}>
+              <h3
+                className={`font-heading text-3xl font-semibold ${tier.highlighted ? "text-white" : "text-foreground"}`}
+              >
                 {tier.name}
               </h3>
-              <p className={`text-4xl font-bold ${tier.highlighted ? "text-white" : "text-foreground"}`}>
+              <p
+                className={`text-4xl font-bold ${tier.highlighted ? "text-white" : "text-foreground"}`}
+              >
                 {tier.price}
               </p>
-              <p className={`text-sm leading-relaxed ${tier.highlighted ? "text-white/80" : "text-muted-foreground"}`}>
+              <p
+                className={`text-sm leading-relaxed ${tier.highlighted ? "text-white/80" : "text-muted-foreground"}`}
+              >
                 {tier.description}
               </p>
             </div>
             <ul className="mt-8 space-y-4 text-sm">
               {tier.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3">
-                  <CheckCircle2 className={`mt-1 h-5 w-5 ${tier.highlighted ? "text-white" : "text-primary"}`} />
-                  <span className={tier.highlighted ? "text-white/90" : "text-muted-foreground"}>{feature}</span>
+                  <CheckCircle2
+                    className={`mt-1 h-5 w-5 ${tier.highlighted ? "text-white" : "text-primary"}`}
+                  />
+                  <span
+                    className={
+                      tier.highlighted
+                        ? "text-white/90"
+                        : "text-muted-foreground"
+                    }
+                  >
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -85,7 +105,8 @@ export function PricingSection() {
       <div className="flex flex-col items-center gap-3 rounded-3xl border border-dashed border-primary/40 bg-primary/5 px-6 py-6 text-sm text-muted-foreground sm:flex-row sm:justify-center dark:bg-primary/10">
         <ShieldCheck className="h-5 w-5 text-primary" />
         <p>
-          Every repair includes lifetime craftsmanship warranty and complimentary device sanitization.
+          Every repair includes lifetime craftsmanship warranty and
+          complimentary device sanitization.
         </p>
       </div>
     </section>

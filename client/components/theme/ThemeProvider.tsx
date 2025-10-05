@@ -1,4 +1,11 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
 type Theme = "light" | "dark";
 
@@ -38,7 +45,9 @@ function applyDocumentTheme(theme: Theme) {
     return;
   }
 
-  document.documentElement.classList.remove(theme === "dark" ? "light" : "dark");
+  document.documentElement.classList.remove(
+    theme === "dark" ? "light" : "dark",
+  );
   document.documentElement.classList.add(theme);
 }
 
@@ -91,7 +100,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     [theme],
   );
 
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 }
 
 export function useTheme() {

@@ -68,7 +68,11 @@ export function SiteHeader() {
             className="inline-flex items-center justify-center rounded-full border border-border/70 p-2 text-foreground transition hover:border-primary/60 hover:text-primary lg:hidden"
             onClick={toggleMenu}
           >
-            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </button>
         </div>
       </div>
@@ -78,7 +82,7 @@ export function SiteHeader() {
           "lg:hidden",
           isMenuOpen
             ? "pointer-events-auto max-h-96 border-t border-border/60 bg-background shadow-xl"
-            : "pointer-events-none max-h-0 overflow-hidden"
+            : "pointer-events-none max-h-0 overflow-hidden",
         )}
       >
         <nav className="flex flex-col gap-2 px-6 py-4 text-base">

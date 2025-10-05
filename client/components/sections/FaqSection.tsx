@@ -25,10 +25,16 @@ export function FaqSection() {
   return (
     <section id="faq" className="space-y-8">
       <div className="space-y-3 text-center">
-        <p className="mx-auto text-sm font-semibold uppercase tracking-[0.3em] text-primary">FAQ</p>
-        <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">Answers before we arrive</h2>
+        <p className="mx-auto text-sm font-semibold uppercase tracking-[0.3em] text-primary">
+          FAQ
+        </p>
+        <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
+          Answers before we arrive
+        </h2>
         <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground">
-          If you have a question that is not covered here, text us at +1 (800) 555-1234 or email hello@swiftfix.co to talk with a SwiftFix specialist.
+          If you have a question that is not covered here, text us at +1 (800)
+          555-1234 or email hello@swiftfix.co to talk with a SwiftFix
+          specialist.
         </p>
       </div>
       <div className="space-y-4">
@@ -39,9 +45,13 @@ export function FaqSection() {
           >
             <summary className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-semibold text-foreground">
               {faq.question}
-              <span className="text-sm font-medium text-primary transition group-open:rotate-45">+</span>
+              <span className="text-sm font-medium text-primary transition group-open:rotate-45">
+                +
+              </span>
             </summary>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {faq.answer}
+            </p>
           </details>
         ))}
       </div>

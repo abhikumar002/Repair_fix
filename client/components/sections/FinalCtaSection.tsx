@@ -15,7 +15,9 @@ export function FinalCtaSection() {
             Let’s get your devices back to brilliant
           </h2>
           <p className="max-w-xl text-base leading-relaxed text-white/80">
-            Book a repair in under 60 seconds or call our concierge team for white-glove device planning, upgrade guidance, and emergency dispatch.
+            Book a repair in under 60 seconds or call our concierge team for
+            white-glove device planning, upgrade guidance, and emergency
+            dispatch.
           </p>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row">

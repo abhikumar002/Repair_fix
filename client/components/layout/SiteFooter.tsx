@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { Clock, Mail, MapPin, PhoneCall, Facebook, Instagram, Twitter } from "lucide-react";
+import {
+  Clock,
+  Mail,
+  MapPin,
+  PhoneCall,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
 
 const quickLinks = [
   { label: "Services", href: "#services" },
@@ -8,7 +16,14 @@ const quickLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-const serviceAreas = ["Downtown", "Midtown", "Riverside", "Tech Park", "Uptown", "Harbor"];
+const serviceAreas = [
+  "Downtown",
+  "Midtown",
+  "Riverside",
+  "Tech Park",
+  "Uptown",
+  "Harbor",
+];
 
 export function SiteFooter() {
   return (
@@ -20,12 +35,17 @@ export function SiteFooter() {
               <PhoneCall className="h-6 w-6" strokeWidth={2.5} />
             </span>
             <div>
-              <p className="font-heading text-lg font-semibold text-foreground">SwiftFix</p>
-              <p className="text-sm text-muted-foreground">Mobile repair experts</p>
+              <p className="font-heading text-lg font-semibold text-foreground">
+                SwiftFix
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Mobile repair experts
+              </p>
             </div>
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Same-day smartphone, tablet, and laptop repairs delivered to your door with certified technicians and premium OEM-grade parts.
+            Same-day smartphone, tablet, and laptop repairs delivered to your
+            door with certified technicians and premium OEM-grade parts.
           </p>
           <div className="flex gap-3">
             {[Facebook, Instagram, Twitter].map((Icon, idx) => (
@@ -42,17 +62,25 @@ export function SiteFooter() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="font-heading text-base font-semibold text-foreground">Contact</h3>
+          <h3 className="font-heading text-base font-semibold text-foreground">
+            Contact
+          </h3>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-3">
               <PhoneCall className="mt-0.5 h-4 w-4 text-primary" />
-              <a href="tel:+18005551234" className="transition hover:text-primary">
+              <a
+                href="tel:+18005551234"
+                className="transition hover:text-primary"
+              >
                 +1 (800) 555-1234
               </a>
             </li>
             <li className="flex items-start gap-3">
               <Mail className="mt-0.5 h-4 w-4 text-primary" />
-              <a href="mailto:hello@swiftfix.co" className="transition hover:text-primary">
+              <a
+                href="mailto:hello@swiftfix.co"
+                className="transition hover:text-primary"
+              >
                 hello@swiftfix.co
               </a>
             </li>
@@ -68,7 +96,9 @@ export function SiteFooter() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="font-heading text-base font-semibold text-foreground">Quick links</h3>
+          <h3 className="font-heading text-base font-semibold text-foreground">
+            Quick links
+          </h3>
           <ul className="space-y-3 text-sm text-muted-foreground">
             {quickLinks.map((link) => (
               <li key={link.label}>
@@ -86,7 +116,9 @@ export function SiteFooter() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="font-heading text-base font-semibold text-foreground">Service areas</h3>
+          <h3 className="font-heading text-base font-semibold text-foreground">
+            Service areas
+          </h3>
           <div className="flex flex-wrap gap-2">
             {serviceAreas.map((area) => (
               <span
@@ -102,7 +134,10 @@ export function SiteFooter() {
 
       <div className="border-t border-border/60 bg-white/50 py-6">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} SwiftFix Mobile Repair. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} SwiftFix Mobile Repair. All rights
+            reserved.
+          </p>
           <div className="flex items-center gap-6">
             <a href="#" className="transition hover:text-primary">
               Privacy

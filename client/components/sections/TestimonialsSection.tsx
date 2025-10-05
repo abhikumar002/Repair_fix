@@ -32,7 +32,8 @@ export function TestimonialsSection() {
           Loved by thousands of device owners
         </h2>
         <p className="mx-auto max-w-3xl text-base leading-relaxed text-muted-foreground">
-          We measure success in minutes saved and data protected. Hear from people who trust SwiftFix to keep them connected every day.
+          We measure success in minutes saved and data protected. Hear from
+          people who trust SwiftFix to keep them connected every day.
         </p>
       </div>
 
@@ -51,8 +52,12 @@ export function TestimonialsSection() {
               “{testimonial.quote}”
             </blockquote>
             <figcaption className="mt-6">
-              <p className="font-heading text-lg font-semibold text-foreground">{testimonial.name}</p>
-              <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+              <p className="font-heading text-lg font-semibold text-foreground">
+                {testimonial.name}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                {testimonial.role}
+              </p>
             </figcaption>
           </figure>
         ))}
