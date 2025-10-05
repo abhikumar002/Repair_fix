@@ -82,7 +82,7 @@ export function PricingSection() {
         ))}
       </div>
 
-      <div className="flex flex-col items-center gap-3 rounded-3xl border border-dashed border-primary/40 bg-primary/5 px-6 py-6 text-sm text-muted-foreground sm:flex-row sm:justify-center">
+      <div className="flex flex-col items-center gap-3 rounded-3xl border border-dashed border-primary/40 bg-primary/5 px-6 py-6 text-sm text-muted-foreground sm:flex-row sm:justify-center dark:bg-primary/10">
         <ShieldCheck className="h-5 w-5 text-primary" />
         <p>
           Every repair includes lifetime craftsmanship warranty and complimentary device sanitization.
