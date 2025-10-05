@@ -40,7 +40,7 @@ export function TestimonialsSection() {
         {testimonials.map((testimonial) => (
           <figure
             key={testimonial.name}
-            className="rounded-3xl border border-border/70 bg-white/80 p-8 shadow-[0_24px_70px_-45px_rgba(14,165,233,0.45)]"
+            className="rounded-3xl border border-border/70 bg-white/80 p-8 shadow-[0_24px_70px_-45px_rgba(14,165,233,0.45)] dark:bg-slate-900/70 dark:shadow-[0_24px_70px_-45px_rgba(14,165,233,0.25)]"
           >
             <div className="flex items-center gap-2 text-primary">
               {Array.from({ length: 5 }).map((_, index) => (
