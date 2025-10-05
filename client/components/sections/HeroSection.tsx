@@ -3,7 +3,10 @@ import { ShieldCheck, Sparkles, Timer, Star } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section id="hero" className="relative isolate overflow-hidden rounded-[2.5rem] border border-border/70 bg-gradient-to-br from-white/70 via-white to-primary/5 px-6 py-12 shadow-2xl shadow-primary/10 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+    <section
+      id="hero"
+      className="relative isolate overflow-hidden rounded-[2.5rem] border border-border/70 bg-gradient-to-br from-white/70 via-white to-primary/5 px-6 py-12 shadow-2xl shadow-primary/10 dark:from-slate-900/80 dark:via-slate-900/70 dark:to-primary/10 sm:px-10 sm:py-16 lg:px-16 lg:py-20"
+    >
       <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_420px]">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
